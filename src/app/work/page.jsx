@@ -5,13 +5,15 @@ const WorkPage = () => {
   return (
     <>
       <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
+        eyebrow="Our Work"
+        title="Systems, brands, and results built through precision."
       >
         <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
+          Nexa Commerce operates a portfolio of e-commerce brands across multiple categories, 
+          each driven by structured systems, data-backed decisions, and consistent execution. 
+          Our work reflects the infrastructure we’ve built — scalable stores, optimized 
+          operations, high-performing marketing frameworks, and digital experiences designed 
+          for long-term growth.
         </p>
       </PageIntro>
     </>
