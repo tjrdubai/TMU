@@ -8,33 +8,44 @@ import React from "react";
 const AboutPage = () => {
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About Nexa Commerce" title="Built on precision, scale, and execution">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Nexa Commerce is a Dubai–based e-commerce operation designed around one core value:
+          exceptional execution. From digital infrastructure and product systems to marketing,
+          logistics, and brand development — every part of our work is built to deliver results.
         </p>
+
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            We operate as a full ecosystem — research, operations, marketing, creative, and
+            performance management under one unified structure. This allows us to scale products
+            rapidly, optimize processes fast, and maintain high standards across all stores and brands.
           </p>
+
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            Our focus is simple: build efficient systems, make data-driven decisions, and execute
+            with consistency. Nexa Commerce works with a growing network of talent, partners, and
+            operators, providing them with a powerful digital infrastructure and proven systems to
+            help them grow.
+          </p>
+
+          <p>
+            Today, Nexa Commerce manages multiple e-commerce brands across various categories,
+            maintains a strong digital presence, and continues expanding operations across the UAE
+            and globally. We believe in long-term growth, transparency, and creating an environment
+            where high-performers thrive.
           </p>
         </div>
       </PageIntro>
+
       <Container className="mt-16">
         <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
+          <StatListItem value="12+" label="Active e-commerce brands" />
+          <StatListItem value="40+" label="Team members & collaborators" />
+          <StatListItem value="UAE & Global" label="Operational footprint" />
         </StatList>
       </Container>
+
       <Cultures />
       <ContactSection />
     </>
