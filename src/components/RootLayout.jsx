@@ -13,6 +13,9 @@ import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
 
+// -----------------------
+// HEADER
+// -----------------------
 const Header = ({
   panelId,
   invert = false,
@@ -21,18 +24,19 @@ const Header = ({
   onToggle,
   toggleRef,
 }) => {
-  // Container
   return (
     <Container>
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"} aria-label="Home">
-          <Logo invert={invert}>Abdullah Agency</Logo>
+          <Logo invert={invert}>Nexa Commerce</Logo>
         </Link>
+
         <div className="flex items-center gap-x-8">
           <Button href={"/contact"} invert={invert}>
-            Contact us
+            Contact Us
           </Button>
+
           <button
             ref={toggleRef}
             type="button"
@@ -59,6 +63,10 @@ const Header = ({
     </Container>
   );
 };
+
+// -----------------------
+// NAV ITEMS (MOBILE)
+// -----------------------
 const NavigationRow = ({ children }) => {
   return (
     <div className="even:mt-px sm:bg-neutral-950">
@@ -73,10 +81,13 @@ const NavigationItem = ({ href, children }) => {
   return (
     <Link
       href={href}
-      className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
+      className="group relative isolate -mx-6 bg-neutral-950 px-6 py-10 
+        even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 
+        sm:even:border-l sm:even:border-neutral-800 sm:even:pl-16"
     >
       {children}
-      <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
+      <span className="absolute inset-y-0 -z-10 w-screen bg-neutral-900 opacity-0 transition 
+        group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
     </Link>
   );
 };
@@ -96,6 +107,9 @@ const Navigation = () => {
   );
 };
 
+// -----------------------
+// CORE LAYOUT
+// -----------------------
 const RootLayoutInner = ({ children }) => {
   const panelId = useId();
   const [expanded, setExpanded] = useState(false);
@@ -103,6 +117,7 @@ const RootLayoutInner = ({ children }) => {
   const closeRef = useRef();
   const navRef = useRef();
   const shouldReduceMotion = useReducedMotion();
+
   useEffect(() => {
     function onClick(event) {
       if (event.target.closest("a")?.href === window.location.href) {
@@ -115,6 +130,7 @@ const RootLayoutInner = ({ children }) => {
       window.removeEventListener("click", onClick);
     };
   }, []);
+
   return (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
       <header>
@@ -123,20 +139,20 @@ const RootLayoutInner = ({ children }) => {
           aria-hidden={expanded ? "true" : undefined}
           inert={expanded ? "" : undefined}
         >
-          {/* Header */}
           <Header
             panelId={panelId}
             icon={HiMenuAlt4}
             toggleRef={openRef}
             expanded={expanded}
             onToggle={() => {
-              setExpanded((expanded) => !expanded);
+              setExpanded(!expanded);
               window.setTimeout(() =>
                 closeRef.current?.focus({ preventScroll: true })
               );
             }}
           />
         </div>
+
         <motion.div
           layout
           id={panelId}
@@ -154,30 +170,33 @@ const RootLayoutInner = ({ children }) => {
                 toggleRef={closeRef}
                 expanded={expanded}
                 onToggle={() => {
-                  setExpanded((expanded) => !expanded);
+                  setExpanded(!expanded);
                   window.setTimeout(() =>
                     openRef.current?.focus({ preventScroll: true })
                   );
                 }}
               />
             </div>
-            {/* Navigation */}
+
+            {/* MOBILE NAVIGATION */}
             <Navigation />
+
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                      Our Offices
                     </h2>
                     <Offices
                       invert
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
+
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                      Follow Us
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>
@@ -187,6 +206,8 @@ const RootLayoutInner = ({ children }) => {
           </motion.div>
         </motion.div>
       </header>
+
+      {/* MAIN + FOOTER */}
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
@@ -197,7 +218,6 @@ const RootLayoutInner = ({ children }) => {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <main className="w-full flex-auto">{children}</main>
-          {/* Footer */}
           <Footer />
         </motion.div>
       </motion.div>
