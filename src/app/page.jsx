@@ -12,25 +12,30 @@ export default function Home() {
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Make your online presence a reality with us!
+            Building scalable e-commerce brands with precision and execution.
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a group of developer working at the intersection of design
-            and technology. It is a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            Nexa Commerce is a Dubai-based e-commerce ecosystem focused on building, 
+            scaling, and optimizing digital brands. We combine strong operational 
+            systems, data-driven decision-making, and performance-focused marketing to 
+            create sustainable growth across multiple online stores and categories.
           </p>
         </FadeIn>
       </Container>
+
       <Clients />
+
       <Testimonials
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: "Phobia", logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user microphone without triggering one of
-        those annoying permission dialogs.
+        Nexa Commerce demonstrated exceptional clarity, structure, and execution
+        throughout our onboarding. Their operational systems and strategic 
+        approach made the entire process seamless and results-focused.
       </Testimonials>
+
       <Services />
+
       <ContactSection />
     </main>
   );
