@@ -22,10 +22,10 @@ const NewsletterForm = () => {
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
-        Sign up for our newsletter
+        Drop your Email
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
+        Get the latest design news, articles, resources and
         inspiration.
       </p>
       <div className="relative mt-6">
