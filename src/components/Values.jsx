@@ -13,43 +13,49 @@ const Values = () => {
           yOffset={-270}
         />
       </div>
+
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="Our Values"
+        title="The principles that drive Nexa Commerce"
       >
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+          Our values reflect the standards we operate by. They guide every 
+          decision we make — from strategy and execution to how we build 
+          systems, manage operations, and scale brands. These principles are 
+          embedded into our culture and the way we work every day.
         </p>
       </SectionIntro>
+
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem title="Precision">
+            We prioritize clarity, structure, and accuracy. Every strategy, 
+            system, and decision is intentional and backed by data.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+
+          <GridListItem title="Efficiency">
+            Speed matters, but efficiency matters more. We focus on processes 
+            that reduce friction and enable rapid, scalable growth.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+
+          <GridListItem title="Adaptability">
+            E-commerce evolves fast — so do we. Our systems, operations, and 
+            strategies are designed to shift quickly with market trends.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+
+          <GridListItem title="Transparency">
+            Clear communication and honest expectations form the core of how we 
+            work internally and with partners.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+
+          <GridListItem title="Commitment">
+            We build long-term partnerships rooted in trust, reliability, and 
+            consistent delivery. When we commit, we execute.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
+
+          <GridListItem title="Innovation">
+            We continuously refine our methods, explore new opportunities, and 
+            implement systems that give our brands a competitive edge.
           </GridListItem>
         </GridList>
       </Container>
