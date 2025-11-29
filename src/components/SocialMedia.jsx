@@ -1,34 +1,38 @@
 import Link from "next/link";
 import clsx from "clsx";
 import {
-  BsFacebook,
-  BsTwitter,
-  BsGithub,
+  BsInstagram,
+  BsTikTok,
+  BsWhatsapp,
+  BsTelegram,
   BsYoutube,
-  BsLinkedin,
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
   {
-    title: "Youtube",
-    href: "https://www.youtube.com/watch?v=eAswnbWptBM",
+    title: "Instagram",
+    href: "https://instagram.com/",
+    icon: BsInstagram,
+  },
+  {
+    title: "TikTok",
+    href: "https://www.tiktok.com/",
+    icon: BsTikTok,
+  },
+  {
+    title: "WhatsApp",
+    href: "https://wa.me/971521179533",
+    icon: BsWhatsapp,
+  },
+  {
+    title: "Telegram",
+    href: "https://t.me/",
+    icon: BsTelegram,
+  },
+  {
+    title: "YouTube",
+    href: "https://youtube.com/",
     icon: BsYoutube,
-  },
-  { title: "GitHub", href: "https://github.com/chrhi", icon: BsGithub },
-  {
-    title: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100010070348939",
-    icon: BsFacebook,
-  },
-  {
-    title: "linkedin",
-    href: "https://www.linkedin.com/in/chehri-abdellah-4a8858267/",
-    icon: BsLinkedin,
-  },
-  {
-    title: "Twitter",
-    href: "https://twitter.com/KING_IN_JUNGLE",
-    icon: BsTwitter,
   },
 ];
 
@@ -51,6 +55,7 @@ const SocialMedia = ({ className, invert = false }) => {
               "transition",
               invert ? "hover:text-neutral-200" : "hover:text-neutral-700"
             )}
+            target="_blank"
           >
             <item.icon className="h-6 w-6 fill-current" />
           </Link>
