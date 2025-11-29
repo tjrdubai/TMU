@@ -11,16 +11,16 @@ const NotFound = () => {
           404
         </p>
         <h1 className="mt-4 font-display text-2xl font-semibold text-neutral-950">
-          Page not found
+          Page Not Found
         </h1>
         <p className="mt-2 text-sm text-neutral-600">
-          Sorry, we could ont find the page you are looking for.
+          The page you’re looking for doesn’t exist or may have been moved.
         </p>
         <Link
           href="/"
           className="mt-4 text-sm font-semibold text-neutral-950 transition hover:text-neutral-700"
         >
-          Go to the home page
+          Return to Home
         </Link>
       </FadeIn>
     </Container>
