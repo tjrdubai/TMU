@@ -9,21 +9,24 @@ const ContactDetails = () => {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        Our Offices
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
+        Nexa Commerce operates from Dubai, with a growing network of partners and 
+        teams internationally. For visits, meetings, or business inquiries, our 
+        office details are listed below.
       </p>
+
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
+
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
+          Email Us
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
           {[
-            ["Careers", "reactjsbd.com"],
-            ["Press", "noorjsdivs@gmail.com"],
+            ["Careers", "careers@grqmail.com"],
+            ["Business Inquiries", "care@grqmail.com"],
           ].map(([label, email]) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -39,9 +42,10 @@ const ContactDetails = () => {
           ))}
         </dl>
       </Border>
+
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
+          Follow Us
         </h2>
         <SocialMedia className="mt-6" />
       </Border>
@@ -50,3 +54,4 @@ const ContactDetails = () => {
 };
 
 export default ContactDetails;
+
