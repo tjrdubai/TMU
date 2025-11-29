@@ -1,7 +1,7 @@
 export function constructMetadata({
-  title = "Abdullah Agency ",
-  description = "Abdullah Agency is an open-source website.",
-  image = "/agency.PNG",
+  title = "Nexa Commerce",
+  description = "Nexa Commerce is a performance-driven e-commerce ecosystem based in Dubai, building and scaling digital brands through structured systems and precise execution.",
+  image = "/nexa-og.png",
   icons = "/favicon.ico",
   noIndex = false,
 }) {
@@ -22,11 +22,10 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@KING_IN_JUNGLE",
     },
     icons,
-    metadataBase: new URL("https://agency-website-abdullah.vercel.app/"),
-    themeColor: "#FFF",
+    metadataBase: new URL("https://nexacommerce.vercel.app/"),
+    themeColor: "#000",
     ...(noIndex && {
       robots: {
         index: false,
