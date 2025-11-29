@@ -2,11 +2,11 @@ import Link from "next/link";
 import clsx from "clsx";
 import {
   BsInstagram,
-  BsTikTok,
   BsWhatsapp,
   BsTelegram,
   BsYoutube,
 } from "react-icons/bs";
+import { SiTiktok } from "react-icons/si";
 
 export const SocialMediaProfiles = [
   {
@@ -17,7 +17,7 @@ export const SocialMediaProfiles = [
   {
     title: "TikTok",
     href: "https://www.tiktok.com/",
-    icon: BsTikTok,
+    icon: SiTiktok, // FIXED
   },
   {
     title: "WhatsApp",
