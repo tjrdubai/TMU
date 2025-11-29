@@ -20,18 +20,21 @@ function Office({ name, children, invert = false }) {
 const Offices = ({ invert = false, ...props }) => {
   return (
     <ul role="list" {...props}>
+      {/* Dubai Headquarters */}
       <li>
-        <Office name="U.S.A" invert={invert}>
-          on bay mark
+        <Office name="Dubai, UAE" invert={invert}>
+          Business Bay, Dubai  
           <br />
-          Newtown city of Las Vegas
+          United Arab Emirates
         </Office>
       </li>
+
+      {/* Global / International Presence */}
       <li>
-        <Office name="London" invert={invert}>
-          13 long Street
+        <Office name="Global Partners" invert={invert}>
+          Operational teams across multiple regions  
           <br />
-          Downtown, Allyway
+          Supporting international e-commerce expansion
         </Office>
       </li>
     </ul>
