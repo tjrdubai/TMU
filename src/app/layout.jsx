@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata = {
   title: {
-    template: "Nexa",
-    default: "Nexa",
+    template: "Nexa Commerce",
+    default: "Nexa Commerce",
   },
 };
 
